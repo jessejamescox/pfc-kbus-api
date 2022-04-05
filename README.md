@@ -1,7 +1,7 @@
-[![DockerHub stars](https://img.shields.io/docker/stars/wagoautomation/pfc-modbus-server.svg?flat&logo=docker "DockerHub stars")](https://hub.docker.com/r/wagoautomation/pfc-modbus-server)
-[![DockerHub pulls](https://img.shields.io/docker/pulls/wagoautomation/pfc-modbus-server.svg?flat&logo=docker "DockerHub pulls")](https://hub.docker.com/r/wagoautomation/pfc-modbus-server)
+[![DockerHub stars](https://img.shields.io/docker/stars/jessejamescox/kbus-api.svg?flat&logo=docker "DockerHub stars")](https://hub.docker.com/r/jessejamescox/kbus-api)
+[![DockerHub pulls](https://img.shields.io/docker/pulls/jessejamescox/kbus-api.svg?flat&logo=docker "DockerHub pulls")](https://hub.docker.com/r/jessejamescox/kbus-api)
 
-# How to run pfc-modbus-server container
+# How to run kbus-api container
 
 ## Prerequisites for tutorial
 - Preinstalled SSH Client (e.g. https://www.putty.org/)
@@ -24,11 +24,11 @@ docker images # to see all preinstalled images
 
  ## Get prebuild pfc-modbus-server image
 ```bash
-docker pull wagoautomation/pfc-modbus-server 
+docker pull jessejamescox/kbus-api 
  ```
 
 ## Setup PFC environment for execution of pfc-modbus-server container. 
-Before the pfc-modbus-server container can be started it is necessary to create a special environment on the PFC. There are two ways to achieve it: 
+Before the kbus-api container can be started it is necessary to create a special environment on the PFC. There are two ways to achieve it: 
 - automatically with the help of a script 
 - manually
 
