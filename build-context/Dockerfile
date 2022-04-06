@@ -27,6 +27,6 @@ COPY --from=image / /
 LABEL authors="jesse.cox@wago.com"
 LABEL org.label-schema.version=${IMAGE_TAG}
 LABEL org.label-schema.vendor="WAGO"
-LABEL org.label-schema.name="wagoautomation/wago-kbus-api"
+LABEL org.label-schema.name="jessejamescox/wago-kbus-api"
 
 ENTRYPOINT ["/home/kbus_api/start.sh"]
