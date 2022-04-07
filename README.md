@@ -145,7 +145,7 @@ jessejamescox/pfc-kbus-api
 Access the config file to setup custom configurations:
 1. use "nano" to modify the file
 ```bash
-nano /home/docker/kbusapidata/_data/kbus-api.cfg
+nano /home/docker/volumes/kbusapidata/_data/kbus-api.cfg
 ```
 
 2. Change the default configuration to support your application architecture including adding your certs/keys and connecting directly to a cloud host (i.e. AWS)
