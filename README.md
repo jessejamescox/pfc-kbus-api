@@ -1,5 +1,42 @@
 [![DockerHub stars](https://img.shields.io/docker/stars/jessejamescox/kbus-api.svg?flat&logo=docker "DockerHub stars")](https://hub.docker.com/r/jessejamescox/kbus-api)
 [![DockerHub pulls](https://img.shields.io/docker/pulls/jessejamescox/kbus-api.svg?flat&logo=docker "DockerHub pulls")](https://hub.docker.com/r/jessejamescox/kbus-api)
+# What is the pfc-kbus-api
+This is an open-source project to enable reading and writing of WAGO PFCX00 Controllers IO data over the MQTT protocol. The controller status and IO values are published cyclically at a rate specified in the configuration file. 
+
+Here is an example of received data published by the pfc-kbus-api:
+```JSON
+{
+  "state": {
+    "reported": {
+      "node_id": "PFC200",
+      "timestamp": 1649356003,
+      "switch_state": "RUN",
+      "module_count": 6,
+      "modules": {
+        "module1": {
+          "pn": 36865,
+          "position": 1,
+          "type": "DI",
+          "input_channel_count": 2,
+          "output_channel_count": 0,
+          "process_data": {
+            "inputs": {
+              "channel1": {
+                "value": true,
+                "label": "myFirstLabeledChan"
+              },
+              "channel2": {
+                "value": false,
+                "label": "m1_input2"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
 
 # How to run kbus-api container
 
