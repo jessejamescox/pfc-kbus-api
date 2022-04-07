@@ -78,6 +78,9 @@ To write to an IO channel, use the following structure:
   }
 }
  ```
+## Node-RED Integration
+Use this api alongside Node-RED with the pre-built palette.  This is pre-installed with the container:
+https://hub.docker.com/repository/docker/jessejamescox/pfc-kbus-api-nodered 
 
 # How to run kbus-api container
 
@@ -232,6 +235,3 @@ status_pub_topic = "/controller/status";
 # instructions on how to set individual deadband for each channel
 default_analog_deadband = 10;
 ```
-## Node-RED Integration
-Use this api alongside Node-RED with the pre-built palette.  This is pre-installed with the container:
-https://hub.docker.com/repository/docker/jessejamescox/pfc-kbus-api-nodered 
