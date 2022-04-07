@@ -38,6 +38,47 @@ Here is an example of received data published by the pfc-kbus-api:
 }
 ```
 
+To write to an IO channel, use the following structure:
+```JSON
+{
+  "state": {
+    "desired": {
+      "modules": {
+        "module2": {
+          "process_data": {
+            "outputs": {
+              "channel1": {
+                "value": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+ It is also possible to label the channels for identification across multiple programs rovisualization
+ ```JSON
+ {
+  "state": {
+    "desired": {
+      "modules": {
+        "module2": {
+          "process_data": {
+            "outputs": {
+              "channel1": {
+                "label": "xPumpSignal"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+ ```
+
 # How to run kbus-api container
 
 ## Prerequisites for tutorial
